@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Workout Generator</title>
+</head>
+
+<body>
+    <h1>Welcome to Workout Generator</h1>
+    <section class="generator">
+        <div class="info-box">
+            <h2 class="info">How It Works</h2>
+            <ul>
+                <li>
+                    <p>Are you ready to transform your fitness journey? Look no further! At Workout Generator, we believe in tailor-made workouts that cater to your unique goals and preferences. Say goodbye to generic routines and hello to personalized fitness plans designed just for you.</p>
+                    <p>If you want to start your fitness journey follow the steps below:</p>
+                    <ol>
+                        <li>Enter your name and gender.</li>
+                        <li>Enter the muscle group that you are aiming to train.</li>
+                        <li>Click on the "Generate" button and choose between the options.</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="generate">
+            <h3>Generator</h3>
+            <form id="workout-form">
+                <p>Let's get started!</p>
+                <label for="users-name">Name</label>
+                <input type="text" id="users-name" name="users-name" placeholder="Enter your name...">
+                
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                
+                <label for="muscle-group">Muscle group</label>
+                <select id="muscle-group" name="muscle-group">
+                    <option value="push">Push</option>
+                    <option value="pull">Pull</option>
+                    <option value="legs">Legs</option>
+                </select>
+
+                <div class="generate-button">
+                    <button type="submit" id="generate-btn">Generate</button>
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <h3>Your Workout</h3>
+            <div id="workout-result">
+            </div>
+        </div>
+    </section>
+    <script src="./gym.js"></script>
+</body>
+</html>
