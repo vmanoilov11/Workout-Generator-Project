@@ -8,7 +8,6 @@ function solve() {
     generateBtn.addEventListener("click", generateWorkout);
     let workoutResult = document.getElementById("workout-result");
 
-    // Define a variable to keep track of the previously selected workout
 let previousWorkout = null;
 
 function generateWorkout(e) {
