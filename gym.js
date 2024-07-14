@@ -35,8 +35,7 @@ function generateWorkout(e) {
     selectedWorkouts = selectedWorkouts.filter(
         (workout) => workout.name !== previousWorkout
     );
-    let randomWorkout =
-        selectedWorkouts[Math.floor(Math.random() * selectedWorkouts.length)];
+    let randomWorkout = selectedWorkouts[Math.floor(Math.random() * selectedWorkouts.length)];
 
     previousWorkout = randomWorkout.name;
 
